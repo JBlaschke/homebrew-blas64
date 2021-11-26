@@ -82,10 +82,10 @@ class Julia64 < Formula
       USE_SYSTEM_PATCHELF=1
       USE_SYSTEM_ZLIB=1
       USE_SYSTEM_P7ZIP=1
-      LIBBLAS=-lopenblas
-      LIBBLASNAME=libopenblas
-      LIBLAPACK=-lopenblas
-      LIBLAPACKNAME=libopenblas
+      LIBBLAS=-lopenblas64_
+      LIBBLASNAME=libopenblas64_
+      LIBLAPACK=-lopenblas64_
+      LIBLAPACKNAME=libopenblas64_
       USE_BLAS64=1
       PYTHON=python3
       MACOSX_VERSION_MIN=#{MacOS.version}
