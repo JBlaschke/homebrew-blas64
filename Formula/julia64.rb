@@ -6,12 +6,12 @@ class Julia64 < Formula
   license all_of: ["MIT", "BSD-3-Clause", "Apache-2.0", "BSL-1.0"]
   head "https://github.com/JuliaLang/julia.git"
 
-  bottle do
-    sha256 cellar: :any,                 monterey:     "3c36c9bd24b098b1a171d997c2d4228eb9cc5f1e390dfdc6396e396b252a91fa"
-    sha256 cellar: :any,                 big_sur:      "34b52ff8bdf7baca24e26a749b3d9b6136c6aebceb006d4e9c47e98402179480"
-    sha256 cellar: :any,                 catalina:     "bf074042f96819e9dafa1f0edf4f23b92ce7d1ba0bab3c53f90548ec936f448c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3795863b91230f2507cecc522c1ed7074bd6b6ce0fdafdfdf57349115237a18a"
-  end
+  # bottle do
+  #   sha256 cellar: :any,                 monterey:     "3c36c9bd24b098b1a171d997c2d4228eb9cc5f1e390dfdc6396e396b252a91fa"
+  #   sha256 cellar: :any,                 big_sur:      "34b52ff8bdf7baca24e26a749b3d9b6136c6aebceb006d4e9c47e98402179480"
+  #   sha256 cellar: :any,                 catalina:     "bf074042f96819e9dafa1f0edf4f23b92ce7d1ba0bab3c53f90548ec936f448c"
+  #   sha256 cellar: :any_skip_relocation, x86_64_linux: "3795863b91230f2507cecc522c1ed7074bd6b6ce0fdafdfdf57349115237a18a"
+  # end
 
   depends_on "python@3.9" => :build
   # https://github.com/JuliaLang/julia/issues/36617
@@ -25,7 +25,7 @@ class Julia64 < Formula
   depends_on "llvm@12"
   depends_on "mbedtls@2"
   depends_on "mpfr"
-  depends_on "jblaschke/blas64/openblas64" => :build
+  depends_on "jblaschke/blas64/openblas64"
   depends_on "openlibm"
   depends_on "p7zip"
   depends_on "pcre2"
