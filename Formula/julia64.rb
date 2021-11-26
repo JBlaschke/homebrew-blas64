@@ -25,7 +25,7 @@ class Julia64 < Formula
   depends_on "llvm@12"
   depends_on "mbedtls@2"
   depends_on "mpfr"
-  depends_on "openblas64"
+  depends_on "jblaschke/blas64/openblas64"
   depends_on "openlibm"
   depends_on "p7zip"
   depends_on "pcre2"

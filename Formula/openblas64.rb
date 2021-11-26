@@ -24,7 +24,7 @@ class Openblas64 < Formula
   keg_only :shadowed_by_macos, "macOS provides BLAS in Accelerate.framework"
 
   depends_on "gcc" # for gfortran
-  depends_on "objconv" => :build
+  depends_on "jblaschke/blas64/objconv" => :build
   fails_with :clang
 
   def install
