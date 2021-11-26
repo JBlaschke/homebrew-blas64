@@ -7,3 +7,9 @@ interface), we add the `64_` sufftix. This formula was built using:
 
 This tap also includes formulae that use this 64-bit version of openBLAS:
 1. `julia64`
+
+## Installation
+
+```
+brew tap JBlaschke/homebrew-blas64
+```
