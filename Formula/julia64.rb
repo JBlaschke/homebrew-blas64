@@ -25,6 +25,10 @@ class Julia64 < Formula
   depends_on "suite-sparse"
   depends_on "utf8proc"
 
+  # Ensure that we don't clobber the non 64-bit julia install
+  conflicts_with cask: "julia"
+  conflicts_with formula: "julia"
+
   uses_from_macos "perl" => :build
   uses_from_macos "zlib"
 
