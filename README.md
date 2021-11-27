@@ -15,3 +15,8 @@ same julia executable).
 ```
 brew tap JBlaschke/homebrew-blas64
 ```
+
+## References
+
+1. The `objconv` formula is based on:
+https://github.com/hawkw/homebrew-grub/blob/master/Formula/objconv.rb
